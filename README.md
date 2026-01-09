@@ -1,6 +1,7 @@
 # Nextune - Vehicle Service Orchestration Platform
 
 A modern, AI-powered vehicle maintenance and predictive service platform with separate customer and dealership admin interfaces.
+http://localhost:5000/api-docs/ ( to view Swagger API documentation)
 
 ## Project Structure
 
