@@ -1,0 +1,44 @@
+[
+  {
+    "service_code": "PERIODIC_10K",
+    "name": "Periodic Service - 10,000 km",
+    "description": "Engine oil change, oil filter, basic inspection, washing.",
+    "average_time_minutes": 120,
+    "categories": ["periodic_maintenance"]
+  },
+  {
+    "service_code": "PERIODIC_20K",
+    "name": "Periodic Service - 20,000 km",
+    "description": "Fluids top-up, brake inspection, air filter cleaning, alignment check.",
+    "average_time_minutes": 150,
+    "categories": ["periodic_maintenance"]
+  },
+  {
+    "service_code": "PERIODIC_30K",
+    "name": "Periodic Service - 30,000 km",
+    "description": "Detailed inspection, coolant check, suspension check.",
+    "average_time_minutes": 180,
+    "categories": ["periodic_maintenance"]
+  },
+  {
+    "service_code": "BRAKE_CHECK",
+    "name": "Brake Inspection & Service",
+    "description": "Brake pad wear check, brake oil check, basic service.",
+    "average_time_minutes": 90,
+    "categories": ["wear_and_tear"]
+  },
+  {
+    "service_code": "CLUTCH_ADJUST",
+    "name": "Clutch Adjustment",
+    "description": "Clutch free play adjustment and road test.",
+    "average_time_minutes": 60,
+    "categories": ["wear_and_tear"]
+  },
+  {
+    "service_code": "CLUTCH_OVERHAUL",
+    "name": "Clutch Overhaul",
+    "description": "Clutch plate, pressure plate inspection and replacement if needed.",
+    "average_time_minutes": 300,
+    "categories": ["wear_and_tear"]
+  }
+]

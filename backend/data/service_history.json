@@ -1,0 +1,29 @@
+[
+  {
+    "record_id": "HIST_001",
+    "customer_id": "CUST_BLR_001",
+    "vin": "MH12AB1234",
+    "date": "2024-06-15",
+    "service_codes_performed": ["PERIODIC_10K"],
+    "mileage_km": 10500,
+    "issues_reported": ["pickup slightly low", "minor rattle from left door"]
+  },
+  {
+    "record_id": "HIST_002",
+    "customer_id": "CUST_BLR_002",
+    "vin": "KA03MN4321",
+    "date": "2024-04-10",
+    "service_codes_performed": ["PERIODIC_20K", "BRAKE_CHECK"],
+    "mileage_km": 21000,
+    "issues_reported": ["brake pedal spongy", "pickup drop in city traffic"]
+  },
+  {
+    "record_id": "HIST_003",
+    "customer_id": "CUST_BLR_003",
+    "vin": "KA01HG7777",
+    "date": "2024-02-05",
+    "service_codes_performed": ["PERIODIC_10K", "CLUTCH_ADJUST"],
+    "mileage_km": 12000,
+    "issues_reported": ["clutch hard in bumper to bumper traffic"]
+  }
+]

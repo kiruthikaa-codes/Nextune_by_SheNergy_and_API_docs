@@ -1,0 +1,131 @@
+[
+  {
+    "appointment_id": "APT_001",
+    "customer_id": "CUST_BLR_001",
+    "vin": "MH12AB1234",
+    "dealership_id": "DLR_BLR_002",
+    "service_codes_requested": [
+      "PERIODIC_20K"
+    ],
+    "requested_datetime": "2025-12-09T06:30:00.000Z",
+    "inventory_needed": [
+      "Engine Oil 5W30"
+    ],
+    "status": "confirmed",
+    "estimated_delay_minutes": 0,
+    "pickup_drop_required": false,
+    "user_issue_summary": "I want to book these services: PERIODIC_20K | I want to book these services: PERIODIC_20K | I want to book these services: PERIODIC_20K"
+  },
+  {
+    "appointment_id": "APT_002",
+    "customer_id": "CUST_BLR_001",
+    "vin": "MH12AB1234",
+    "dealership_id": "DLR_BLR_002",
+    "service_codes_requested": [
+      "PERIODIC_10K"
+    ],
+    "requested_datetime": "2025-12-09T11:30:00.000Z",
+    "inventory_needed": [
+      "Engine Oil 5W30"
+    ],
+    "status": "confirmed",
+    "estimated_delay_minutes": 0,
+    "pickup_drop_required": false,
+    "user_issue_summary": "no air at all | no noises  | I want to book these services: PERIODIC_10K"
+  },
+  {
+    "appointment_id": "APT_003",
+    "customer_id": "CUST_BLR_001",
+    "vin": "MH12AB1234",
+    "dealership_id": "DLR_BLR_002",
+    "service_codes_requested": [
+      "PERIODIC_10K"
+    ],
+    "requested_datetime": "2025-12-08T09:30:00.000Z",
+    "inventory_needed": [
+      "Engine Oil 5W30"
+    ],
+    "status": "confirmed",
+    "estimated_delay_minutes": 0,
+    "pickup_drop_required": false,
+    "user_issue_summary": "hi my windsheild wipers wont work | no  | consistently  | I want to book these services: PERIODIC_10K"
+  },
+  {
+    "appointment_id": "APT_004",
+    "customer_id": "CUST_BLR_001",
+    "vin": "MH12AB1234",
+    "dealership_id": "DLR_BLR_001",
+    "service_codes_requested": [
+      "PERIODIC_10K",
+      "WIPER_CHECK"
+    ],
+    "requested_datetime": "2025-12-09T11:30:00.000Z",
+    "inventory_needed": [
+      "Engine Oil 5W30",
+      "Engine Oil 5W30"
+    ],
+    "status": "confirmed",
+    "estimated_delay_minutes": 0,
+    "pickup_drop_required": true,
+    "pickup_address": "A1204 ncc ivory heights ",
+    "user_issue_summary": "hey my windshieldwipers wont work | no sound at all | start the car  | I want to book these services: PERIODIC_10K"
+  },
+  {
+    "appointment_id": "APT_005",
+    "customer_id": "CUST_BLR_001",
+    "vin": "MH12AB1234",
+    "dealership_id": "DLR_BLR_001",
+    "service_codes_requested": [
+      "PERIODIC_20K",
+      "AC_CHECK"
+    ],
+    "requested_datetime": "2025-12-11T11:30:00.000Z",
+    "inventory_needed": [
+      "Engine Oil 5W30",
+      "Engine Oil 5W30"
+    ],
+    "status": "confirmed",
+    "estimated_delay_minutes": 0,
+    "pickup_drop_required": true,
+    "pickup_address": "A1204 NCC ivory heights ,\noutter ring road \nbangalore - 560016",
+    "user_issue_summary": "hi my ac isnt working properly  | it is blowing no air at all  | there is no noise at all when i turn on the fan  | I want to book these services: PERIODIC_20K"
+  },
+  {
+    "appointment_id": "APT_006",
+    "customer_id": "CUST_BLR_001",
+    "vin": "MH12AB1234",
+    "dealership_id": "DLR_BLR_003",
+    "service_codes_requested": [
+      "PERIODIC_10K"
+    ],
+    "requested_datetime": "2025-12-11T06:30:00.000Z",
+    "inventory_needed": [
+      "Engine Oil 5W30"
+    ],
+    "status": "confirmed",
+    "estimated_delay_minutes": 0,
+    "pickup_drop_required": true,
+    "pickup_address": "A1204 ncc ivory heights ",
+    "user_issue_summary": "hi my break pads arent working properly there seems to be somthing wrong | reduced stopping power | warning lights  | I want to book these services: PERIODIC_10K"
+  },
+  {
+    "appointment_id": "APT_007",
+    "customer_id": "CUST_BLR_001",
+    "vin": "MH12AB1234",
+    "dealership_id": "DLR_BLR_001",
+    "service_codes_requested": [
+      "PERIODIC_10K",
+      "WIPER_CHECK"
+    ],
+    "requested_datetime": "2025-12-12T11:30:00.000Z",
+    "inventory_needed": [
+      "Engine Oil 5W30",
+      "Engine Oil 5W30"
+    ],
+    "status": "confirmed",
+    "estimated_delay_minutes": 0,
+    "pickup_drop_required": true,
+    "pickup_address": "A 1204 ncc ivory height ",
+    "user_issue_summary": "hi my windshield wipers arent working properly | they are not moving fast enough | ugh i dont know maybe noise is there  | I want to book these services: PERIODIC_10K"
+  }
+]

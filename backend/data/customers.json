@@ -1,0 +1,61 @@
+[
+  {
+    "customer_id": "CUST_BLR_001",
+    "name": "Arjun Kumar",
+    "email": "arjun.kumar@example.in",
+    "phone": "+91-98450-12345",
+    "username": "arjun_blr",
+    "password": "password123",
+    "vehicles": [
+      {
+        "vin": "MH12AB1234",
+        "model": "Maruti Suzuki Baleno",
+        "year": 2021
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST_BLR_002",
+    "name": "Sneha Reddy",
+    "email": "sneha.reddy@example.in",
+    "phone": "+91-99860-54321",
+    "username": "sneha_indiranagar",
+    "password": "sneha@2024",
+    "vehicles": [
+      {
+        "vin": "KA03MN4321",
+        "model": "Hyundai Creta",
+        "year": 2020
+      },
+      {
+        "vin": "KA05PQ9876",
+        "model": "Tata Nexon",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST_BLR_003",
+    "name": "Rahul Sharma",
+    "email": "rahul.sharma@example.in",
+    "phone": "+91-97310-88888",
+    "username": "rahul_whitefield",
+    "password": "rahul@cars",
+    "vehicles": [
+      {
+        "vin": "KA01HG7777",
+        "model": "Mahindra XUV300",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST_BLR_004",
+    "name": "Test User",
+    "email": "test.user@example.in",
+    "phone": "+91-90000-00000",
+    "username": "test_blr",
+    "password": "password123",
+    "vehicles": []
+  }
+]

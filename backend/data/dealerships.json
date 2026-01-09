@@ -1,0 +1,93 @@
+[
+  {
+    "dealership_id": "DLR_BLR_001",
+    "name": "Trident Hyundai, Indiranagar",
+    "address": "100 Feet Road, Indiranagar, Bengaluru, Karnataka 560038",
+    "coordinates": {
+      "lat": 12.9719,
+      "lng": 77.6412
+    },
+    "inventory": [
+      {
+        "part_name": "Engine Oil 5W30",
+        "quantity": 10
+      },
+      {
+        "part_name": "Oil Filter Hyundai",
+        "quantity": 15
+      },
+      {
+        "part_name": "Brake Pads Front",
+        "quantity": 8
+      }
+    ],
+    "service_codes_supported": [
+      "PERIODIC_10K",
+      "PERIODIC_20K",
+      "BRAKE_CHECK",
+      "CLUTCH_ADJUST"
+    ],
+    "rating": 4.4,
+    "historical_satisfaction_score": 4.2
+  },
+  {
+    "dealership_id": "DLR_BLR_002",
+    "name": "Tata Motors Prerana Motors, Peenya",
+    "address": "Metro Pillar 253, Tumkur Road, Peenya, Bengaluru, Karnataka 560022",
+    "coordinates": {
+      "lat": 13.0285,
+      "lng": 77.515
+    },
+    "inventory": [
+      {
+        "part_name": "Engine Oil 5W40",
+        "quantity": 10
+      },
+      {
+        "part_name": "Oil Filter Tata",
+        "quantity": 5
+      },
+      {
+        "part_name": "Clutch Plate Assembly",
+        "quantity": 2
+      }
+    ],
+    "service_codes_supported": [
+      "PERIODIC_10K",
+      "PERIODIC_30K",
+      "CLUTCH_OVERHAUL"
+    ],
+    "rating": 4.1,
+    "historical_satisfaction_score": 4
+  },
+  {
+    "dealership_id": "DLR_BLR_003",
+    "name": "Kia Authorized Service, Whitefield",
+    "address": "ITPL Main Road, Whitefield, Bengaluru, Karnataka 560066",
+    "coordinates": {
+      "lat": 12.985,
+      "lng": 77.737
+    },
+    "inventory": [
+      {
+        "part_name": "Engine Oil 0W20",
+        "quantity": 5
+      },
+      {
+        "part_name": "Oil Filter Kia",
+        "quantity": 3
+      },
+      {
+        "part_name": "Brake Pads Rear",
+        "quantity": 6
+      }
+    ],
+    "service_codes_supported": [
+      "PERIODIC_10K",
+      "PERIODIC_20K",
+      "BRAKE_CHECK"
+    ],
+    "rating": 4.6,
+    "historical_satisfaction_score": 4.5
+  }
+]

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 230, 241, 255;
+  --background-start-rgb: 10, 26, 47;
+  --background-end-rgb: 5, 15, 28;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Custom Animations */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px theme('colors.electric-blue'), 0 0 10px theme('colors.electric-blue');
+  }
+  50% {
+    box-shadow: 0 0 15px theme('colors.electric-blue'), 0 0 30px theme('colors.electric-blue');
+  }
+}
+
+@keyframes glow-green {
+  0%, 100% {
+    box-shadow: 0 0 5px theme('colors.neon-green'), 0 0 10px theme('colors.neon-green');
+  }
+  50% {
+    box-shadow: 0 0 15px theme('colors.neon-green'), 0 0 30px theme('colors.neon-green');
+  }
+}
+
+@keyframes glow-cyan {
+  0%, 100% {
+    box-shadow: 0 0 5px theme('colors.electric-cyan'), 0 0 10px theme('colors.electric-cyan');
+  }
+  50% {
+    box-shadow: 0 0 15px theme('colors.electric-cyan'), 0 0 30px theme('colors.electric-cyan');
+  }
+}
+
+/* Custom Classes */
+.glow-effect {
+  @apply relative overflow-hidden;
+}
+
+.glow-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 20px theme('colors.electric-blue');
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.glow-effect:hover::after {
+  opacity: 0.7;
+  animation: glow 2s infinite;
+}
+
+.glow-button {
+  @apply px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105;
+}
+
+.glow-button.primary {
+  @apply bg-gradient-to-r from-electric-blue to-electric-cyan text-primary-dark font-semibold shadow-glow;
+  animation: glow 2s infinite alternate;
+}
+
+.glow-button.secondary {
+  @apply bg-card-dark border border-electric-blue text-electric-blue hover:bg-opacity-50 shadow-glow-cyan;
+}
+
+/* Glassmorphism Effect */
+.glass-card {
+  @apply bg-opacity-20 bg-clip-padding backdrop-filter backdrop-blur-lg bg-card-dark border border-opacity-20 border-electric-blue rounded-xl shadow-lg;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-card-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-electric-blue rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-electric-cyan;
+}

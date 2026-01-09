@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bg-accent-purple {
+    @apply bg-[#8B5CF6];
+  }
+  .text-accent-purple {
+    @apply text-[#8B5CF6];
+  }
+  .border-accent-purple {
+    @apply border-[#8B5CF6];
+  }
+  .bg-accent-white {
+    @apply bg-[#F5F7FA];
+  }
+  .text-accent-white {
+    @apply text-[#F5F7FA];
+  }
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 14, 39;
+  --background-end-rgb: 26, 15, 58;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+  font-family: 'Inter', 'Poppins', system-ui, sans-serif;
+}
+
+/* Custom Animations */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(77, 127, 255, 0.4), 0 0 10px rgba(77, 127, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(77, 127, 255, 0.6), 0 0 30px rgba(77, 127, 255, 0.4);
+  }
+}
+
+@keyframes glow-purple {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(139, 92, 246, 0.4), 0 0 10px rgba(139, 92, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.6), 0 0 30px rgba(139, 92, 246, 0.4);
+  }
+}
+
+@keyframes glow-white {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(245, 247, 250, 0.2), 0 0 10px rgba(245, 247, 250, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(245, 247, 250, 0.3), 0 0 30px rgba(245, 247, 250, 0.2);
+  }
+}
+
+@keyframes glow-blue {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(15, 27, 77, 0.3), 0 0 10px rgba(15, 27, 77, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(15, 27, 77, 0.4), 0 0 30px rgba(15, 27, 77, 0.3);
+  }
+}
+
+/* Glassmorphism Effect */
+.glass-card {
+  @apply bg-opacity-10 bg-clip-padding backdrop-filter backdrop-blur-lg bg-card-dark border border-opacity-20 border-electric-blue rounded-xl shadow-lg;
+}
+
+.glass-card-dark {
+  @apply bg-opacity-20 bg-clip-padding backdrop-filter backdrop-blur-xl bg-card-dark border border-opacity-30 border-electric-blue rounded-2xl shadow-2xl;
+}
+
+/* Glow Button Styles */
+.glow-button {
+  @apply px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.glow-button-primary {
+  @apply glow-button font-semibold shadow-glow;
+  background: linear-gradient(to right, #4D7FFF, #8B5CF6);
+  color: #F5F7FA;
+  animation: glow 2s infinite alternate;
+}
+
+.glow-button-secondary {
+  @apply glow-button bg-card-dark border border-electric-blue text-electric-blue hover:bg-opacity-50 shadow-glow;
+}
+
+.glow-button-success {
+  @apply glow-button font-semibold;
+  background: linear-gradient(to right, #8B5CF6, #4D7FFF);
+  color: #F5F7FA;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+  animation: glow-purple 2s infinite alternate;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-card-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-electric-blue rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-electric-cyan;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Text utilities */
+.text-glow {
+  @apply text-electric-blue drop-shadow-lg;
+}
+
+.text-glow-green {
+  @apply text-neon-green drop-shadow-lg;
+}
+
+.text-glow-cyan {
+  @apply text-electric-cyan drop-shadow-lg;
+}
+
+/* Badge styles */
+.badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold;
+}
+
+.badge-success {
+  @apply badge bg-accent-purple bg-opacity-20 text-accent-purple border border-accent-purple border-opacity-50;
+}
+
+.badge-warning {
+  @apply badge bg-yellow-500 bg-opacity-20 text-yellow-300 border border-yellow-500 border-opacity-50;
+}
+
+.badge-info {
+  @apply badge bg-electric-blue bg-opacity-20 text-electric-blue border border-electric-blue border-opacity-50;
+}
+
+.badge-danger {
+  @apply badge bg-red-500 bg-opacity-20 text-red-300 border border-red-500 border-opacity-50;
+}
+
+/* Card hover effect */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-glow hover:border-electric-cyan;
+}
+
+/* Chatbot animations */
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(77, 127, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(77, 127, 255, 0.6);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
